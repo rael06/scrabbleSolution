@@ -30,8 +30,9 @@ public class Dictionary {
         }
     }
 
-    public List<String> find(String letters, String pattern) {
+    public List<String> find(String letters, String lettersToAdd, String pattern) {
         List<String> results = new ArrayList<>();
+        letters += lettersToAdd;
         Pattern p = createPattern(pattern);
 
         List<String> toFindChars = Arrays.asList(letters.toUpperCase().split(""));

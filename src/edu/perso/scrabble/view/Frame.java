@@ -11,6 +11,7 @@ public class Frame extends JFrame {
     private Dictionary dictionary;
     private ResultPanel resultPanel;
     private FieldPanel lettersPanel;
+    private FieldPanel lettersToAddPanel;
     private FieldPanel patternPanel;
 
     private static Frame instance;
@@ -34,10 +35,13 @@ public class Frame extends JFrame {
     }
 
     private void initTextFields() {
-        lettersPanel = new FieldPanel("Letters");
+        lettersPanel = new FieldPanel("Lettres du banc");
         add(lettersPanel);
 
-        patternPanel = new FieldPanel("Contraintes");
+        lettersToAddPanel = new FieldPanel("Lettres additionnelles");
+        add(lettersToAddPanel);
+
+        patternPanel = new FieldPanel("Contraintes de position/contenu de lettres");
         add(patternPanel);
     }
 
@@ -53,8 +57,9 @@ public class Frame extends JFrame {
 
     private void showResult(ActionEvent e) {
         String letters = lettersPanel.getField().getText();
+        String lettersToAdd = lettersToAddPanel.getField().getText();
         String pattern = patternPanel.getField().getText();
-        List<String> results = dictionary.find(letters, pattern);
+        List<String> results = dictionary.find(letters, lettersToAdd, pattern);
         resultPanel.show(results);
         //dictionary.show(results);
         revalidate();

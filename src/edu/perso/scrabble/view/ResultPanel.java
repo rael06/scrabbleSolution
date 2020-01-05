@@ -2,7 +2,6 @@ package edu.perso.scrabble.view;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
 import java.util.List;
 
 class ResultPanel extends JScrollPane {
