@@ -12,14 +12,21 @@ class ResultPanel extends JScrollPane {
         super();
         resultPanel.setLayout(new GridLayout(0, COLS));
         resultPanel.setBackground(Color.WHITE);
-        setPreferredSize(new Dimension(UIConstants.MainFrameWidth - 20, UIConstants.MainFrameHeight-260));
+        setPreferredSize(new Dimension(UIConstants.MainFrameWidth - 20, UIConstants.MainFrameHeight - 335));
         getVerticalScrollBar().setUnitIncrement(25);
         setViewportView(resultPanel);
     }
 
     void show(List<String> results) {
         resultPanel.removeAll();
-        results.forEach(r -> resultPanel.add(new ResultWord(r)));
+        if (results.isEmpty()) {
+            ((GridLayout) resultPanel.getLayout()).setColumns(1);
+            resultPanel.add(new Title("Aucun résultat"));
+        } else {
+            ((GridLayout) resultPanel.getLayout()).setColumns(COLS);
+            results.forEach(r -> resultPanel.add(new ResultWord(r)));
+        }
+
         repaint();
         revalidate();
     }

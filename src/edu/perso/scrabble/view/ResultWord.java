@@ -10,7 +10,7 @@ class ResultWord extends JPanel {
         setLayout(new FlowLayout(FlowLayout.CENTER));
         setOpaque(false);
         wordLabel.setOpaque(true);
-        //wordLabel.setBackground(Color.CYAN);
+        wordLabel.setBackground(Color.WHITE);
         add(wordLabel);
     }
 }

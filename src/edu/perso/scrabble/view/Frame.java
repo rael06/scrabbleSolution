@@ -35,13 +35,13 @@ public class Frame extends JFrame {
     }
 
     private void initTextFields() {
-        lettersPanel = new FieldPanel("Lettres du banc");
+        lettersPanel = new FieldPanel("Lettres du banc (indiquez les jokers par des \"*\")");
         add(lettersPanel);
 
-        lettersToAddPanel = new FieldPanel("Lettres additionnelles");
+        lettersToAddPanel = new FieldPanel("Lettres additionnelles (séparez les groupes de lettres par un \".\")");
         add(lettersToAddPanel);
 
-        patternPanel = new FieldPanel("Contraintes de position/contenu de lettres");
+        patternPanel = new FieldPanel("Contraintes de position/contenu de lettres (comblez avec des \"*\" les lettres prévues entre les lettres contraintes)");
         add(patternPanel);
     }
 

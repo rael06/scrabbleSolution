@@ -45,6 +45,7 @@ public class Dictionary {
             currentWordChars = Arrays.asList(word.split(""));
 
             boolean valid = p.matcher(word).find();
+            valid &= word.matches("(?i).*"+ lettersToAdd + ".*");
             valid &= currentWordChars.stream().filter(wc->!toFindChars.contains(wc)).count() <= nbJoker;
 
             for (String currentToFindChar : toFindChars) {
