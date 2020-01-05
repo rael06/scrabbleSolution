@@ -7,7 +7,6 @@ import java.util.List;
 
 class ResultPanel extends JScrollPane {
     private static final int COLS = 4;
-    private List<String> results = new ArrayList<>();
     private JPanel resultPanel = new JPanel();
 
     ResultPanel() {
@@ -20,7 +19,6 @@ class ResultPanel extends JScrollPane {
     }
 
     void show(List<String> results) {
-        this.results = results;
         resultPanel.removeAll();
         results.forEach(r -> resultPanel.add(new ResultWord(r)));
         repaint();
