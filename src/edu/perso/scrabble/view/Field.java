@@ -1,13 +1,13 @@
-package edu.perso.scrabble;
+package edu.perso.scrabble.view;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 
-public class Field extends JPanel {
+class Field extends JPanel {
     private String text = "";
-    public Field() {
+    Field() {
         super();
         setLayout(new FlowLayout(FlowLayout.CENTER));
         setOpaque(true);
@@ -27,7 +27,7 @@ public class Field extends JPanel {
         text = tf.getText();
     }
 
-    public String getText() {
+    String getText() {
         return text;
     }
 }

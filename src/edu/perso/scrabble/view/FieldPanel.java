@@ -1,4 +1,4 @@
-package edu.perso.scrabble;
+package edu.perso.scrabble.view;
 
 import javax.swing.*;
 import java.awt.*;
@@ -7,7 +7,7 @@ public class FieldPanel extends JPanel {
     private Field field;
     private Title title;
 
-    public FieldPanel(String title) {
+    FieldPanel(String title) {
         this.title = new Title(title);
         field = new Field();
         setLayout(new BorderLayout());
@@ -17,7 +17,7 @@ public class FieldPanel extends JPanel {
         add(BorderLayout.CENTER, field);
     }
 
-    public Field getField() {
+    Field getField() {
         return field;
     }
 

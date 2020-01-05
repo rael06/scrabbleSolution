@@ -1,4 +1,4 @@
-package edu.perso.scrabble;
+package edu.perso.scrabble.model;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -11,7 +11,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Dictionary {
-    public static Dictionary instance;
+    private static Dictionary instance;
     private List<String> words = new ArrayList<>();
 
     private Dictionary() {
@@ -33,7 +33,6 @@ public class Dictionary {
     public List<String> find(String letters, String pattern) {
         List<String> results = new ArrayList<>();
         Pattern p = createPattern(pattern);
-        System.out.println(p.toString());
 
         List<String> toFindChars = Arrays.asList(letters.toUpperCase().split(""));
         int nbJoker = (int) toFindChars.stream().filter(c -> c.equals("*")).count();
@@ -67,21 +66,14 @@ public class Dictionary {
         results.forEach(System.out::println);
     }
 
-    public Pattern createPattern(String sPattern) {
+    private Pattern createPattern(String sPattern) {
         String s = sPattern;
-        List<String> allMatches = new ArrayList<>();
         Pattern p = Pattern.compile("(?i)(\\**\\*)(?:[a-z]+)");
         Matcher m = p.matcher(s);
         while (m.find()) {
-            allMatches.add(m.group());
+            s = s.replace(m.group(), m.group().replaceAll("\\*", "\\[a-z]"));
         }
-
-        for (String match : allMatches) {
-            s = s.replace(match, match.replaceAll("\\*", "\\[a-z]"));
-        }
-
         s = s.replaceAll("\\*", "\\[a-z]?");
-
         return Pattern.compile("(?i)^" + s + ".*$");
     }
 }

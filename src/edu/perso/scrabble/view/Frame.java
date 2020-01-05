@@ -1,4 +1,6 @@
-package edu.perso.scrabble;
+package edu.perso.scrabble.view;
+
+import edu.perso.scrabble.model.Dictionary;
 
 import javax.swing.*;
 import java.awt.*;
@@ -54,7 +56,7 @@ public class Frame extends JFrame {
         String pattern = patternPanel.getField().getText();
         List<String> results = dictionary.find(letters, pattern);
         resultPanel.show(results);
-        dictionary.show(results);
+        //dictionary.show(results);
         revalidate();
     }
 

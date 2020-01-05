@@ -1,15 +1,15 @@
-package edu.perso.scrabble;
+package edu.perso.scrabble.view;
 
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ResultPanel extends JScrollPane {
+class ResultPanel extends JScrollPane {
     private List<String> results = new ArrayList<>();
     private JPanel resultPanel = new JPanel();
 
-    public ResultPanel() {
+    ResultPanel() {
         super();
         resultPanel.setLayout(new GridLayout(results.size(), 4));
         resultPanel.setOpaque(true);
@@ -19,7 +19,7 @@ public class ResultPanel extends JScrollPane {
         setViewportView(resultPanel);
     }
 
-    public void show(List<String> results) {
+    void show(List<String> results) {
         this.results = results;
         resultPanel.removeAll();
         results.forEach(r -> resultPanel.add(new Title(r)));

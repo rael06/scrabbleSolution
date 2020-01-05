@@ -1,13 +1,11 @@
 package edu.perso.scrabble;
 
+import edu.perso.scrabble.view.Frame;
+
 public class Main {
     public static void main(String[] args) {
-        //test();
-        String dicoSourcePath = args[0];
+        String dictionarySourcePath = args[0];
         Frame f = Frame.getInstance();
-        f.init(dicoSourcePath);
-    }
-
-    public static void test() {
+        f.init(dictionarySourcePath);
     }
 }
