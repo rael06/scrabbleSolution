@@ -15,6 +15,7 @@ public class Dictionary {
     private List<String> words = new ArrayList<>();
 
     private Dictionary() {
+
     }
 
     public static Dictionary getInstance() {
