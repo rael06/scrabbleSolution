@@ -5,6 +5,8 @@ import edu.perso.scrabble.model.Dictionary;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.util.List;
 
 public class Frame extends JFrame {
@@ -26,6 +28,14 @@ public class Frame extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setPreferredSize(new Dimension(UIConstants.MainFrameWidth, UIConstants.MainFrameHeight));
 
+
+        this.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                super.keyTyped(e);
+                if (e.getKeyCode() == 0) showResult(null);
+            }
+        });
         initTextFields();
         initButtons();
         resultPanel = new ResultPanel();
@@ -36,12 +46,39 @@ public class Frame extends JFrame {
 
     private void initTextFields() {
         lettersPanel = new FieldPanel("Lettres du banc (indiquez les jokers par des \"*\")");
+        lettersPanel.getField().getTextField().addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                super.keyTyped(e);
+                if (e.getKeyChar() == '\n') {
+                    showResult(null);
+                }
+            }
+        });
         add(lettersPanel);
 
         lettersToAddPanel = new FieldPanel("Lettres additionnelles (séparez les groupes de lettres par un \".\")");
+        lettersToAddPanel.getField().getTextField().addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                super.keyTyped(e);
+                if (e.getKeyChar() == '\n') {
+                    showResult(null);
+                }
+            }
+        });
         add(lettersToAddPanel);
 
         patternPanel = new FieldPanel("Contraintes de position/contenu de lettres (comblez avec des \"*\" les lettres prévues entre les lettres contraintes)");
+        patternPanel.getField().getTextField().addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                super.keyTyped(e);
+                if (e.getKeyChar() == '\n') {
+                    showResult(null);
+                }
+            }
+        });
         add(patternPanel);
     }
 

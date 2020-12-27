@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4d8ec72a-cef6-4da9-8a0f-7e47ac7e0c1d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/edu/perso/scrabble/view/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/perso/scrabble/view/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/perso/scrabble/view/FieldPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/perso/scrabble/view/FieldPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/perso/scrabble/view/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/perso/scrabble/view/Frame.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1mCXATESWN0BsUO1KY6tDQmJHu0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/edu/perso/scrabble" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/edu/perso/scrabble" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.perso.scrabble.Main" />
+      <module name="scrabbleSolution" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d8ec72a-cef6-4da9-8a0f-7e47ac7e0c1d" name="Default Changelist" comment="" />
+      <created>1608998403563</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608998403563</updated>
+      <workItem from="1608998404809" duration="5070000" />
+      <workItem from="1609091211997" duration="1565000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="360" y="231" width="1071" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608999961982">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state x="360" y="231" width="1071" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1608999961982" />
+    <state x="683" y="293" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1608999294953">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state x="683" y="293" key="#com.intellij.ide.macro.MacrosDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1608999294953" />
+    <state x="709" y="280" key="#com.intellij.ide.util.MemberChooser" timestamp="1609091733336">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state x="709" y="280" key="#com.intellij.ide.util.MemberChooser/0.25.1792.1095@0.25.1792.1095" timestamp="1609091733336" />
+    <state x="633" y="378" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1608998437026">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state x="633" y="378" key="#com.intellij.ide.util.TreeClassChooserDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1608998437026" />
+    <state width="1750" height="296" key="GridCell.Tab.0.bottom" timestamp="1609092695311">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state width="1750" height="296" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1609092695311" />
+    <state width="1750" height="296" key="GridCell.Tab.0.center" timestamp="1609092695310">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state width="1750" height="296" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1609092695310" />
+    <state width="1750" height="296" key="GridCell.Tab.0.left" timestamp="1609092695309">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state width="1750" height="296" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1609092695309" />
+    <state width="1750" height="296" key="GridCell.Tab.0.right" timestamp="1609092695310">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state width="1750" height="296" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1609092695310" />
+    <state x="405" y="208" key="SettingsEditor" timestamp="1608998658986">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state x="405" y="208" key="SettingsEditor/0.25.1792.1095@0.25.1792.1095" timestamp="1608998658986" />
+  </component>
+</project>
